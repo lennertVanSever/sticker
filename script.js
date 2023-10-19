@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const hashtagInput = document.getElementById("hashtagText");
     const bottomInput = document.getElementById("bottomText");
 
-    const headerTextElement = document.getElementById("myTextPath");
-    const hashtagTextElement = document.querySelector("text[style*='black']");
-    const bottomTextElement = document.querySelector("text[style*='white'] tspan");
+    const headerTextElement = document.getElementById("textPathHeader");
+    const hashtagTextElement = document.getElementById("textPathHashtag");
+    const bottomTextElement = document.getElementById("textPathBottom");
 
+    console.log(bottomTextElement)
     headerInput.addEventListener("input", function () {
         headerTextElement.textContent = headerInput.value;
     });
