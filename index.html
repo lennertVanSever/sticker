@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js"></script>
 
     <title>Shit Sticker Editor</title>
     <link rel="stylesheet" href="styles.css">
@@ -22,6 +23,7 @@
             <input type="text" id="bottomText">
             <label for="hashtagText">#Hashtag</label>
             <input type="text" id="hashtagText">
+            <button id="exportButton">Export SVG</button>
         </section>
         <section class="preview-container">
             <svg viewBox="-15 -15 530 530" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +78,7 @@
     </main>
 
     <footer id="app-footer">
-        <p>Copyright © 2023</p>
+        <a href="https://github.com/lennertVanSever/sticker">GitHub | MIT License</a>
     </footer>
     <script src="script.js"></script>
 </body>
