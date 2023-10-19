@@ -1,0 +1,59 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+    display: block;
+    width: calc(100% - 50px);
+    max-width: 400px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+/* Preview Container */
+.preview-container {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
